@@ -1,8 +1,8 @@
-var name = prompt('Ismingiz: ')
-console.log('Ismim ' + name);
+var name = prompt('Tell me your name: ')
+console.log('My name is ' + name);
 
-var age = prompt('Yoshingiz: ')
-console.log('Yoshim ' + age);
+var age = prompt('Your age: ')
+console.log('YoshMy ageim ' + age);
 
 var task1 = prompt('Solve the problem: 23 + 8 = ?')
 console.log('Task 1: 23 + 8 = 31. ' + 'Your answer is ' + task1);
