@@ -1,5 +1,5 @@
 
-// Square pattern and ships
+                                            // Square pattern and ships
 
 
 
@@ -23,30 +23,30 @@
 
 
 
-// Task 2
-let n = +prompt("Enter a number")
+                                                    // Task 2
+// let n = +prompt("Enter a number")
 
-while (isNaN(n) || n ===0) {
-    n = +prompt("Display only number")
-}
+// while (isNaN(n) || n ===0) {
+//     n = +prompt("Display only number")
+// }
 
-if (n % 2 === 0) {
-    n = n + 1
-}
+// if (n % 2 === 0) {
+//     n = n + 1
+// }
 
-let square = "";
-for (let i = 0; i < n; i++) {
-    for (let j = 0; j < n; j++) {
-        if (i == j || j == 0 || j == n - 1 || i == 0 || i == n - 1 || j == n - 1 - i) {
-            square += " & "
-        } else {
-            square += "   "
-        }
+// let square = "";
+// for (let i = 0; i < n; i++) {
+//     for (let j = 0; j < n; j++) {
+//         if (i == j || j == 0 || j == n - 1 || i == 0 || i == n - 1 || j == n - 1 - i) {
+//             square += " & "
+//         } else {
+//             square += "   "
+//         }
         
-    } 
+//     } 
     
-    console.log(square);   
-    square = ""
-}
+//     console.log(square);   
+//     square = ""
+// }
 
 
