@@ -1,3 +1,5 @@
+// object 
+
 let users = {};
 
 for (let i = 1; i <= 10; i++) { 
@@ -22,7 +24,6 @@ for (let i = 1; i <= 10; i++) {
 
     user.age = agee;
 
-
     // Add user to users object
 
     users[i] = user
@@ -30,4 +31,13 @@ for (let i = 1; i <= 10; i++) {
 
 for (const id in users) {
     console.log("User "+ users[id].id ,"\nName: "+ users[id].name ,"\nAge: "+users[id].age);
+}
+
+const object = cartObj()
+
+const del = 10000;
+let totalPrice = 0
+for (const rand in cartObj) {
+  totalPrice += priceList[rand].price
+  console.log("Your order: " + priceList[rand][key].info , "and delivery fee is "+del ,"Total is "+(totalPrice+del));
 }
