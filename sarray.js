@@ -11,13 +11,21 @@ for (let i = 0; i < arr.length; i++) {
 }
 console.log(count);
 
-// command
+// command                                                                          DONE
 
 let array = [];
-let com = prompt("Enter your command")
-while (com !== "stop") {
-    com = prompt("Enter your command")
+
+for (let i = 0; i < Infinity; i++) {
+    let addel = prompt("Give your command with space")   
+    if (addel == "stop" || addel == "STOP" || addel == "Stop") {
+        break
+    } else if (addel.startsWith("add")) {
+        arr1 = addel.split(" ")
+        array.push(arr1[1])
+    } else if (addel.startsWith("del")) {
+        arr2 = addel.split(" ")
+        index = array.indexOf(arr2[1])
+        array.splice(index, 1)
+    }
 }
- for (let i = 0; i < com; i++) {
-        
- }
+console.log(array);

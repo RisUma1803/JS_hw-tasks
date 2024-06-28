@@ -33,6 +33,7 @@ for (const id in users) {
     console.log("User "+ users[id].id ,"\nName: "+ users[id].name ,"\nAge: "+users[id].age);
 }
 
+// task 2
 const object = cartObj()
 
 const del = 10000;

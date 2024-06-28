@@ -83,7 +83,7 @@ for (let i = 0; i < numProb; i++) {
 
 
 
-//task 2
+//task 2                                                      DONE \have to understand
 
 
 

@@ -3,14 +3,14 @@ while (!isNaN(str)) {
     str = prompt("Enter a valid string")
 }
 
-let array = str.split(" ")
-let updStr = array.join("")
-for (let i = 0; i < updStr.length; i++) {
-    updStr = updStr.replace("", "-")   
+for (let i = 0; i < str.length; i++) {
+    str = str.replace(" ", "")
 }
+let array = str.split("")
+let updStr = array.join("-")
 console.log(updStr);
 
-// remove exclamation
+// remove exclamation                                                                      DONE
 
 
 let string = prompt("Enter string")
