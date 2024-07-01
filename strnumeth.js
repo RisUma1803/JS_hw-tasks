@@ -6,8 +6,8 @@ while (!isNaN(str)) {
 for (let i = 0; i < str.length; i++) {
     str = str.replace(" ", "")
 }
-let array = str.split("")
-let updStr = array.join("-")
+let array1 = str.split("")
+let updStr = array1.join("-")
 console.log(updStr);
 
 // remove exclamation                                                                      DONE
