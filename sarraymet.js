@@ -15,9 +15,9 @@ getMiddle()
 
 //task 2
 function twoLargestNumber() {
-    let numbers = prompt("Enter numbers without commas"),
+    let numbers = prompt("Enter numbers with spaces"),
         arr4 = numbers.split(",") 
         sorted = arr4.sort((a,b) => b-a)
-        console.log(arr4[0]+", "+arr4[1]); //or console.log(arr4.slice(0,2))
+        console.log(sorted[0]+", "+sorted[1]); //or console.log(arr4.slice(0,2))
 }
 twoLargestNumber()
