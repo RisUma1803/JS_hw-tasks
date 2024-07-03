@@ -1,44 +1,50 @@
-// object 
+// // object
 
-let users = {};
+// let users = {};
 
-for (let i = 1; i <= 10; i++) { 
-    let user = {};
-    
-    // set user id
-    user.id = i;
+// for (let i = 1; i <= 10; i++) {
+//     let user = {};
 
-    let namee = prompt("Enter name for user " + i)
-        while (!isNaN(namee)) {
-            namee = prompt("Enter valid name")
-        };
+//     // set user id
+//     user.id = i;
 
-    // set user name
+//     let namee = prompt("Enter name for user " + i)
+//         while (!isNaN(namee)) {
+//             namee = prompt("Enter valid name")
+//         };
 
-    user.name = namee;
+//     // set user name
 
-    let agee = prompt("Enter the age for user "+ i)
-    while (isNaN(agee || agee <= 0)) {
-        agee = prompt("Enter only number for age")
-    }
+//     user.name = namee;
 
-    user.age = agee;
+//     let agee = prompt("Enter the age for user "+ i)
+//     while (isNaN(agee || agee <= 0)) {
+//         agee = prompt("Enter only number for age")
+//     }
 
-    // Add user to users object
+//     user.age = agee;
 
-    users[i] = user
-}
+//     // Add user to users object
 
-for (const id in users) {
-    console.log("User "+ users[id].id ,"\nName: "+ users[id].name ,"\nAge: "+users[id].age);
-}
+//     users[i] = user
+// }
+
+// for (const id in users) {
+//     console.log("User "+ users[id].id ,"\nName: "+ users[id].name ,"\nAge: "+users[id].age);
+// }
 
 // task 2
-const object = cartObj()
+const object = cartObj();
 
 const del = 10000;
-let totalPrice = 0
-for (const rand in cartObj) {
-  totalPrice += priceList[rand].price
-  console.log("Your order: " + priceList[rand][key].info , "and delivery fee is "+del ,"Total is "+(totalPrice+del));
+let totalPrice = 0;
+allInfo = ""
+for (const rand in object) {
+  totalPrice += object[rand].price;
+  allInfo += rand + ": " + object[rand].info + ", ";
 }
+console.log(
+  "Your order: " + allInfo,
+  "and delivery fee is " + del,
+  ". Total is: " + (totalPrice + del)
+);

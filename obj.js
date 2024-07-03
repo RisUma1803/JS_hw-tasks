@@ -1,4 +1,4 @@
-function cartObj() {
+  function cartObj() {
   let rand = randomNumbers(1, 2)
 
   const priceList = {
@@ -22,7 +22,7 @@ function cartObj() {
         price: 32000
       },
       'Soya': {
-        info: '200ml',
+        info: '200 ml',
         price: 5000
       },
     }
